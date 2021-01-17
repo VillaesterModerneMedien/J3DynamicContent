@@ -15,6 +15,7 @@ include_once __DIR__ . '/src/ContactTypeProvider.php';
 include_once __DIR__ . '/src/SourceController.php';
 include_once __DIR__ . '/src/SourceListener.php';
 include_once __DIR__ . '/src/TemplateListener.php';
+include_once __DIR__ . '/src/Type/CustomContactsQueryType.php';
 include_once __DIR__ . '/src/Type/ContactQueryType.php';
 include_once __DIR__ . '/src/Type/ContactType.php';
 include_once __DIR__ . '/src/Type/SeminarQueryType.php';

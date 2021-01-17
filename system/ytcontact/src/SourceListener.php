@@ -1,6 +1,7 @@
 <?php
 
 use Joomla\CMS\Table\ContentType;
+use YOOtheme\Builder\Joomla\Source\Type\CustomContactsQueryType;
 use YOOtheme\Builder\Source;
 use YOOtheme\Config;
 use YOOtheme\Metadata;
@@ -15,6 +16,7 @@ class SourceListener
     {
         $source->objectType('ContactType', ContactType::config());
         $source->queryType(ContactQueryType::config());
+        $source->queryType(CustomContactsQueryType::config());
         $source->objectType('SeminarType', SeminarType::config());
         $source->queryType(SeminarQueryType::config());
     }
