@@ -1,4 +1,7 @@
 <?php
+
+use YOOtheme\Builder\Joomla\Source\ContactsHelper;
+
 /**
  * @package    plg_system_studiogongcontact
  *
@@ -42,7 +45,7 @@ class ContactQueryType
                     'metadata' => [
 
                         'label' => 'Contact',
-                        'group' => 'Studio Gong',
+                        'group' => 'Page',
 
                         'fields' => [
                             'id' => [
