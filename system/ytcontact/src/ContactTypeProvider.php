@@ -19,7 +19,7 @@ class ContactTypeProvider
         }
 
         $model = new \ContactModelContact(['ignore_request' => true]);
-        $model->setState('contact.id', (array) $ids);
+        $model->setState('contact.id', $ids[0]);
         $model->setState('filter.state', 1);
         $model->setState('params', new JRegistry());
 
@@ -27,6 +27,6 @@ class ContactTypeProvider
             $model->setState($name, $value);
         }
 
-        return $model->getItem();
+        return $model->getItem($ids[0]);
     }
 }
